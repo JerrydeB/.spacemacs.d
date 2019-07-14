@@ -165,6 +165,8 @@
 
   (add-hook 'js2-mode-hook 'prettier-js-mode)
 
+  (add-hook 'react-mode-hook 'prettier-js-mode)
+
   (fringe-mode '(nil . 0))
 
   (define-key global-map (kbd "C-x 1") 'delete-other-windows)
