@@ -138,7 +138,7 @@
         anzu-mode-line-update-function 'spacemacs/anzu-update-mode-line
         diff-hl-side 'left
         prettier-js-args '(
-                           "--trailing-comma" "all"
+                           "--trailing-comma" "none"
                            "--bracket-spacing" "false"
                            )
         elm-format-on-save t
