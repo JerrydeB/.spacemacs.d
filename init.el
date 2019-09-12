@@ -139,7 +139,8 @@
         diff-hl-side 'left
         prettier-js-args '(
                            "--trailing-comma" "none"
-                           "--bracket-spacing" "false"
+                           "--bracket-spacing" "true"
+                           "--tab-width" "4"
                            )
         elm-format-on-save t
         flycheck-pos-tip-timeout 9999
@@ -166,6 +167,10 @@
   (add-hook 'js2-mode-hook 'prettier-js-mode)
 
   (add-hook 'react-mode-hook 'prettier-js-mode)
+
+  (add-hook 'typescript-mode-hook 'prettier-js-mode)
+
+  (add-hook 'scss-mode-hook 'prettier-js-mode)
 
   (fringe-mode '(nil . 0))
 
